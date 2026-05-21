@@ -192,7 +192,10 @@ Submit pull requests
 This project is open source and available under the MIT License.
 
 👨‍💻 Author
-Ihsan - [Your GitHub Profile]
+Ashenafi Bancha
+Elham Jemal
+Feruza Hassen
+Ihsan Jemal
 
 🙏 Acknowledgments
 The original DES specification (FIPS PUB 46-3)
