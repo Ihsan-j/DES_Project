@@ -113,10 +113,12 @@ def final(block):
     return permute(block, FP)
 
 
+# Expands the 32-bit right half into 48 bits using expansion table
 def expand(r):
     return ''.join(r[pos - 1] for pos in E)
 
 
+# Applies S-box substitution to compress 48 bits into 32 bits
 def sbox(bits):
     out = ""
     for i in range(8):
@@ -127,9 +129,11 @@ def sbox(bits):
     return out
 
 
+# Performs permutation using the DES P-box table
 def pbox(bits):
     return ''.join(bits[pos - 1] for pos in P)
 
 
+# Executes one complete DES Feistel round transformation
 def feistel(r, k):
     return pbox(sbox(xor(expand(r), k)))

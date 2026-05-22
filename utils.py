@@ -1,3 +1,4 @@
+# Converts plain text into binary representation
 def text_to_binary(text: str) -> str:
     return ''.join(format(ord(c), '08b') for c in text)
 
@@ -17,7 +18,7 @@ def binary_to_hex(binary: str) -> str:
         binary = binary.ljust((len(binary) + 3) // 4 * 4, '0')
     return ''.join(format(int(binary[i:i+4], 2), 'X') for i in range(0, len(binary), 4))
 
-
+# Applies permutation using the provided DES table
 def permute(block, table):
     return ''.join(block[i - 1] for i in table)
 
