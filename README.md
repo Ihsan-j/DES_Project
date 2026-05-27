@@ -220,5 +220,3 @@ This README provides:
 - Project structure explanation
 - Limitations and security notes
 - Professional formatting for GitHub
-
-You can customize the author name, GitHub repository URL, and add any additional details specific to your project.
